@@ -8,6 +8,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/0bd4eed3e5.js" crossorigin="anonymous"></script>
+    <!-- Custom css styles -->
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <!-- Customization tailwind css -->
     <script>
        tailwind.config = {
             theme: {
@@ -20,10 +33,33 @@
         }
     </script>
 </head>
-<body>
+<body class="font-manrope">
     <!-- Header section -->
-    <header class="">
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+              <div>
+                <h1 class="text-5xl font-bold">
+                    It's good<br>
+                    tea time at The Tea <br>
+                    House
+                </h1>
+                <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="btn btn-primary">Explore More</button>
+              </div>
+              <div>
+                    <img src="./images/banner.png" class="max-w-sm" />
 
+                <div class="-mt-20 flex items-center gap-5 drop-shadow-lg p-5 w-60 bg-white rounded-md">
+                    <i class="fa-solid fa-star text-amber-400 text-3xl"></i>
+                    <div>
+                        <h3 class="text-3xl font-extrabold">5.00</h3>
+                        <p>Trust Pilot Ratings</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
     </header>
     <!-- Main section -->
     <main>
@@ -31,7 +67,8 @@
     </main>
     <!-- Footer section -->
     <footer>
-
+        
     </footer>
+
 </body>
 </html>
